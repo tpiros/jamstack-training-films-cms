@@ -1,0 +1,33 @@
+{
+  "name": "films",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.1.2",
+    "@strapi/plugin-users-permissions": "4.1.2",
+    "@strapi/strapi": "4.1.2",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0",
+    "sqlite3": "5.0.2",
+    "strapi-plugin-slugify": "^2.1.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "874d53ce-bd4e-431b-a789-a3e67e9746e1"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "films",
+  "info": {
+    "singularName": "film",
+    "pluralName": "films",
+    "displayName": "film",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "released": {
+      "type": "date"
+    },
+    "director": {
+      "type": "string"
+    },
+    "plot": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "Film"
+    }
+  }
+}
